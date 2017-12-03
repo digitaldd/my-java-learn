@@ -1,0 +1,23 @@
+
+package javaapplication1;
+
+import java.util.Scanner;
+    public class JavaApplication1 {
+         private static Scanner inner = new Scanner (System.in);
+           
+    public static void main(String[] args) {
+    //digital-dd: second simple game
+     System.out.println ("Hello, and welcome to another 'Number game'");
+     final int simplenumber = 30;
+     int realnumber = (int) (Math.random() * simplenumber); 
+     levelup  (realnumber,  simplenumber);
+     inner.close(); }  
+    
+     private static void levelup (int realnumber, final int simplenumber) {
+     while (true) {
+     System.out.println ("All that you need: guess number 0 to " + simplenumber);
+     System.out.println ("Please enter your number here: ");
+     int usernumber = inner.nextInt();
+     if (usernumber > realnumber) {System.out.println ("Try to less number!");} 
+     else if (usernumber < realnumber) {System.out.println ("Try to great number!");}  
+     else  {System.out.println ("Exellent job! See you on next game. "); break;}}}}
