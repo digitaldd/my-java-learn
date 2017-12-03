@@ -1,0 +1,41 @@
+package javaapplication5;
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+
+         // made calculator
+
+    Scanner in = new Scanner (System.in);
+    System.out.println("Please enter the first "  );
+    float a = in.nextFloat();
+
+    System.out.println("Pleae enter the second "  );
+    float b = in.nextFloat();
+
+    System.out.println("Choose action:  ");
+    System.out.println("1 - sum");
+            System.out.println ("2 - difference");
+                    System.out.println ("3 - multiplication");
+                        System.out.println ("4 - division");
+                        int c = in.nextInt();
+                        float r=0;
+        switch (c) {
+            case 1:
+                r=a+b;
+                break;
+            case 2:
+                r=a-b;
+                break;
+            case 3:
+                r=a*b;
+                break;
+            case 4:
+                r=a/b;
+                break;
+            default:
+                break;}
+                
+        System.out.printf("Your result is = " + "%.2f", +r);
+        System.out.println(" "); }}
