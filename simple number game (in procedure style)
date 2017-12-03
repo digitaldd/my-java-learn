@@ -1,0 +1,19 @@
+package javaapplication5;
+import java.util.Scanner;
+
+public class JavaApplication5 {
+
+    public static void main(String[] args) {
+    //digital-dd: first simple game
+    
+     System.out.println ("Hello, and welcome to another 'Number game'");
+     Scanner in = new Scanner (System.in);
+     int simplenumber=30;
+     int realnumber = (int) (Math.random() * simplenumber);
+     while (true) {
+     System.out.println ("All that you need: guess number 0 to " + simplenumber);
+     System.out.println ("Please enter your number here: ");
+     int usernumber = in.nextInt();
+     if (usernumber > realnumber) {System.out.println ("Try to less number!");} 
+     else if (usernumber < realnumber) {System.out.println ("Try to great number!");}  
+     else  {System.out.println ("Exellent job! See you on next game. "); break;}}}}
